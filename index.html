@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bloggin</title>
+</head>
+
+<body class="main-layout">
+    <header class="main-header full main-layout">
+        <div class="header-child flex space-between align-center">
+            <div class="logo white">Blogin<span class="title-dot">.</span></div>
+            <nav class="main-nav ">
+                <ul class="title flex clean-list">
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="btn-menu" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <main class="card-layout flex wrap">
+
+        <article class="card flex">
+            <div class="card-image"><img src="img/img01.png" alt=""></div>
+            <div class="card-content flex direction-col ">
+                <h3>Duis aute irure dolor in
+                    henderit in voluptate.</h3>
+                <p class="first-p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="second-p">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button>Continue Reading</button>
+            </div>
+        </article>
+
+        <article class="card flex ">
+            <div class="card-image"><img src="img/img02.png" alt=""></div>
+            <div class="card-content flex direction-col ">
+                <h3>Duis aute irure dolor in
+                    henderit in voluptate.</h3>
+                    <p class="first-p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p class="second-p">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                <button>Continue Reading <span class="continue-arrow">→</span></button>
+            </div>
+        </article>
+
+        <article class="card flex">
+            <div class="card-image"><img src="img/img03.png" alt=""></div>
+            <div class="card-content flex direction-col ">
+                <h3>Duis aute irure dolor in
+                    henderit in voluptate.</h3>
+                    <p class="first-p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p class="second-p">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                <button>Continue Reading</button>
+            </div>
+        </article>
+    </main>
+    <hr>
+    <div class="paging-container flex space-between align-center">
+        <a href="#">← PREVIOUS</a>
+        <a href="#"> NEXT →</a>
+    </div>
+
+    <footer class="main-footer flex direction-col space-between align-center">
+        <div class="logo black">Blogin<span class="title-dot">.</span></div>
+        <p class="copyrights">© copyrights by Matan Amzaleg</p>
+        <ul class="flex clean-list">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+            <li><a href="#" class="fa fa-linkedin"></a></li>
+        </ul>
+    </footer>
+
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+        }
+    </script>
+</body>
+
+</html>
