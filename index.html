@@ -10,13 +10,33 @@
     <title>Bloggin</title>
 </head>
 
-<body class="main-layout">
+<body class="main-layout ">
+    <div class="modal-container full flex" onclick="toggleModal()">
+        <div class="modal">
+            <h2 class="modal-title">Hello I'm modal</h2>
+            <p class="modal-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officiis saepe similique mollitia! Est
+                culpa
+                cupiditate voluptate, nostrum quae eum, nihil nam officia dolorem natus eos id voluptates temporibus
+                enim?
+            </p>
+            <button class="close-btn">Close</button>
+        </div>
+    </div>
+    <div class="main-screen full" onclick="toggleMenu()"></div>
     <header class="main-header full main-layout">
         <div class="header-child flex space-between align-center">
             <div class="logo white">Blogin<span class="title-dot">.</span></div>
             <nav class="main-nav ">
-                <ul class="title flex clean-list">
-                    <li><a href="#">Journal</a></li>
+                <ul class="title flex clean-list ">
+                    <li class="drop-down"><a class="active" href="#">Journal</a>
+                        <ul class="clean-list drop-down">
+                            <li><a class="dropdown-a" href="#">October 2016</a></li>
+                            <li><a class="dropdown-a" href="#">January 2017</a></li>
+                            <li><a class="dropdown-a" href="#">April 2017</a></li>
+                            <li><a class="dropdown-a" href="#">July 2017</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Work</a></li>
                     <li><a href="#">Contact</a></li>
@@ -33,14 +53,15 @@
             <div class="card-content flex direction-col ">
                 <h3>Duis aute irure dolor in
                     henderit in voluptate.</h3>
-                <p class="first-p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                <p class="first-p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commo
                     doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 <p class="second-p">
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur...
                 </p>
-                <button>Continue Reading</button>
+                <button onclick="toggleModal()">Continue Reading</button>
             </div>
         </article>
 
@@ -49,14 +70,15 @@
             <div class="card-content flex direction-col ">
                 <h3>Duis aute irure dolor in
                     henderit in voluptate.</h3>
-                    <p class="first-p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
-                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p class="second-p">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur...
-                    </p>
-                <button>Continue Reading <span class="continue-arrow">→</span></button>
+                <p class="first-p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="second-p">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button onclick="toggleModal()">Continue Reading <span class="continue-arrow">→</span></button>
             </div>
         </article>
 
@@ -65,14 +87,15 @@
             <div class="card-content flex direction-col ">
                 <h3>Duis aute irure dolor in
                     henderit in voluptate.</h3>
-                    <p class="first-p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
-                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p class="second-p">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur...
-                    </p>
-                <button>Continue Reading</button>
+                <p class="first-p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="second-p">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button onclick="toggleModal()">Continue Reading</button>
             </div>
         </article>
     </main>
@@ -85,7 +108,7 @@
     <footer class="main-footer flex direction-col space-between align-center">
         <div class="logo black">Blogin<span class="title-dot">.</span></div>
         <p class="copyrights">© copyrights by Matan Amzaleg</p>
-        <ul class="flex clean-list">
+        <ul class="footer-ul flex clean-list">
             <li><a href="#" class="fa fa-facebook"></a></li>
             <li><a href="#" class="fa fa-twitter"></a></li>
             <li><a href="#" class="fa fa-instagram"></a></li>
@@ -96,8 +119,12 @@
 
     <script>
         function toggleMenu() {
-            document.body.classList.toggle('menu-open');
+            document.body.classList.toggle('menu-open')
         }
+        function toggleModal() {
+            document.body.classList.toggle('modal-open')
+        }
+
     </script>
 </body>
 
