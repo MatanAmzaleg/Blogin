@@ -341,6 +341,10 @@ hr {
         position: relative;
     }
 
+    .card-layout{
+        padding-top: 40px;
+    }
+
     .title.clean-list a.active {
         color: var(--clr7);
         box-shadow: inset 0 -4px 0;
@@ -367,7 +371,8 @@ hr {
         background-color: inherit;
         border: none;
         color: var(--clr8);
-        font-size: 2rem;
+        font-size: 1.8rem;
+        right: 0;
     }
 
     .main-nav ul {
@@ -437,9 +442,9 @@ hr {
         margin-bottom: 10px;
     }
 
-    .main-footer {
-        height: 13rem;
-        padding-block: 30px;
+    .main-footer.direction-col {
+        height: 16.8rem;
+        padding-block: auto;
     }
 
 
